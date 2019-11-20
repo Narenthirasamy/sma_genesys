@@ -52,7 +52,10 @@ def get_Sentiments():
     data['type'] = 'positive'
     data['value'] = positive
 
-  data = {"positive": "57","negative": "20","neutral": "33"}
+  data = {"positive": 57,"negative": 10,"neutral": 33,
+          "top_tweet": ["My #iphone knows me better than most people",
+                        "Amazing #iphone 11 pro...",
+                        "white & black.. #shotoniphone #iphone "]}
   json_data = json.dumps(data)
 
   return json_data
