@@ -1,0 +1,10 @@
+<mat-grid-list cols="4" rowHeight="700px" class="grid" rowWidth ='100px'>
+    
+        <mat-grid-tile [colspan]="3" [rowspan]= "1" [class.mat-elevation-z2]="true">
+            
+            <app-graph Title="Sentiment Over Time"></app-graph>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]= "1"  id="four" [class.mat-elevation-z2]="true"><app-donut></app-donut></mat-grid-tile>
+        
+       
+      </mat-grid-list>

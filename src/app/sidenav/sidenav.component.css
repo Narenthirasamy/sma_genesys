@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+    height: 100%;
+  }
+  .sidenav{
+      width:250px; 
+    
+      background-color: #FBF7F7;
+      align-content: center
+  }
+#Twitter{
+    background-color: #2771C6;
+    
+}
+  
+#fb{
+    background-color: #1AEE13
+}
+#insta{
+    background-color: #EEC613
+}
+
+
+#div{
+    background-color:grey
+}

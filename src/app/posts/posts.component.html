@@ -1,0 +1,14 @@
+<mat-grid-list cols="4" rowHeight="700px" class="grid" rowWidth ='100px'>
+        <!-- <mat-grid-tile
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows"
+            [style.background]="tile.color">
+          {{tile.text}}
+        </mat-grid-tile> -->
+        <mat-grid-tile [colspan]="3" [rowspan]= "1" [class.mat-elevation-z2]="true"><app-graph Title="Posts Over Time"></app-graph></mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]= "1"  id="four" [class.mat-elevation-z2]="true"></mat-grid-tile>
+        
+       
+      </mat-grid-list>
+      

@@ -1,0 +1,28 @@
+<!-- <mat-drawer-container class="container">
+    <mat-drawer mode="side" opened [class.mat-elevation-z12]="true" class="sidenav">
+      
+    </mat-drawer>
+  
+</mat-drawer-container> -->
+<mat-drawer-container class="container" autosize [hasBackdrop]="true">
+    <mat-drawer #drawer class="sidenav" mode="side" [class.mat-elevation-z12]="true" >
+        <div>
+            <mat-card>Social Media Analyzer</mat-card>
+            <img src="../../assets/Social-Media (1).jpg" width="248px" height="200px"><br><br><br>
+            
+            <mat-card [class.mat-elevation-z12]="true" id="Twitter" routerLink="/post"><mat-icon> bubble_chart</mat-icon>Posts Over Time</mat-card><br>
+            <mat-card [class.mat-elevation-z12]="true" id="fb" routerLink="/sentiment"><mat-icon> directions_bike</mat-icon>Sentiments</mat-card><br>
+            <mat-card [class.mat-elevation-z12]="true" id="insta" routerLink="/prediction"><mat-icon> bubble_chart</mat-icon>Prediction</mat-card>
+        </div>
+    </mat-drawer>
+<div class="example-sidenav-content">
+      <mat-toolbar color="primary">
+        <button type="button" mat-button (click)="drawer.toggle()">
+           <mat-icon>menu</mat-icon> 
+          </button>
+          &nbsp; Social Media Analyzer
+        </mat-toolbar>
+        <router-outlet></router-outlet>
+    </div>
+  
+  </mat-drawer-container>

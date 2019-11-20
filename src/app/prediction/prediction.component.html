@@ -1,0 +1,18 @@
+<mat-grid-list cols="3" rowHeight="700px" class="grid" rowWidth ='100px'>
+        <!-- <mat-grid-tile
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows"
+            [style.background]="tile.color">
+          {{tile.text}}
+        </mat-grid-tile> -->
+        <mat-grid-tile [colspan]="3" [rowspan]= "1" [class.mat-elevation-z2]="true"><app-graph Title="Prediction Results"></app-graph></mat-grid-tile>
+        <!-- <mat-grid-tile [colspan]="1" [rowspan]= "1"  id="four" [class.mat-elevation-z2]="true">
+            <h1>Feature Prediction</h1><br/>
+            <button mat-raised-button color="primary">Feauture 1</button><br/><br/>
+            <button mat-raised-button color="primary">Feauture 2</button>
+        </mat-grid-tile> -->
+        
+       
+      </mat-grid-list>
+    
