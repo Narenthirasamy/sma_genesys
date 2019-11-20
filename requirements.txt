@@ -1,0 +1,8 @@
+flask
+matplotlib
+numpy
+nested-lookup
+textblob
+pandas
+statsmodels
+xlrd

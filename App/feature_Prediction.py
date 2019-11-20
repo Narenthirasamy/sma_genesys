@@ -1,19 +1,20 @@
 import warnings
 import itertools
+import json
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 warnings.filterwarnings("ignore")
-plt.style.use('fivethirtyeight')
+# plt.style.use('fivethirtyeight')
 import pandas as pd
 import statsmodels.api as sm
-import matplotlib
-matplotlib.rcParams['axes.labelsize'] = 14
-matplotlib.rcParams['xtick.labelsize'] = 12
-matplotlib.rcParams['ytick.labelsize'] = 12
-matplotlib.rcParams['text.color'] = 'k'
+# import matplotlib
+# matplotlib.rcParams['axes.labelsize'] = 14
+# matplotlib.rcParams['xtick.labelsize'] = 12
+# matplotlib.rcParams['ytick.labelsize'] = 12
+# matplotlib.rcParams['text.color'] = 'k'
 
 def get_FeaturePrediction():
-	df = pd.read_excel(r"C:\Users\mibrahim\Desktop\sma_genesys\Data\Feature_Prediction.xls")
+	df = pd.read_excel(r"/sma_genesys/data/Feature_Prediction.xls")
 	multicamera = df.loc[df['Category'] == 'MultiCamera']
 
 	#Data Preprocessing
@@ -56,8 +57,9 @@ def get_FeaturePrediction():
 	pred_uc = results.get_forecast(steps=100)
 	pred_ci = pred_uc.conf_int()
 
-	print(pred_uc.predicted_mean.to_json)
-	return pred_uc.predicted_mean.to_json
+	# print(pred_uc.predicted_mean.to_json())
 
-if __name__== "__main__":
-	get_FeaturePrediction()
+	return pred_uc.predicted_mean.to_json()
+
+# if __name__== "__main__":
+# 	get_FeaturePrediction()
